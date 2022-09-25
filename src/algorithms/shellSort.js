@@ -13,7 +13,7 @@ export function shellSort(array, result = new Result()) {
         let currentIndexCopy = currentIndex
         // save the value of the currentIndex
         let itemValue = array[currentIndex]
-  
+        result.incrementComparation();
         while (currentIndexCopy >= gapSize && array[currentIndexCopy - gapSize] > itemValue) { //TODO: COMO DETECTAR ESSA COMPARAÇÃO?
           result.incrementComparation();
           array[currentIndexCopy] = array[currentIndexCopy - gapSize]
